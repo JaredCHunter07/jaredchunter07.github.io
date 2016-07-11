@@ -15,4 +15,4 @@ If you want, you can also go watch some training videos at
 http://www.youtube.com/user/c9ide.
 
 Happy coding!
-The Cloud9 IDE team# jaredchunter07.github.io
+The Cloud9 IDE team# https://jaredchunter07.github.io
