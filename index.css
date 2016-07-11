@@ -1,10 +1,10 @@
-body h1 {
+h1 {
     font-family: Helvetica, Arial, sans-serif;
     color: #4445a2;
 }
-body ul li {
+ul li {
     color: green;
 }
-body ul li p {
+ul li p {
     color: black;
 }
