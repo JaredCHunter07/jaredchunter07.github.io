@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mormon's Tithing Calculator</title>
+        <link rel="stylesheet" href="day3.css">
+    </head>
+    <body>
+        <h1>Mormon's Tithing Calculator</h1>
+        <div class='tithingInput'>
+            <p>How much do you have/have you earned?</p>
+            <p>$<input type="text" id='tithing'>
+            <button id='titheButt'>Calculate</button></p>
+            <div>
+                <p>How much should you pay:</p>
+                <p>$<input type="text" id='tithingOutput'></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.getElementById('titheButt').onclick = function () {
+            document.getElementById('tithingOutput').value = (.1 * document.getElementById('tithing').value).toFixed(2);
+        };
+    </script>
+</html>
