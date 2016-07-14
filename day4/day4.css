@@ -1,0 +1,44 @@
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 6px green;
+    font-style: italic;
+}
+.soundboard button {
+    font-size: 30px;
+    font-family: 'Bauhaus 93', Helvetica, Arial, sans-serif;
+    background-color: green;
+    border-style: none;
+    border-radius: 4px;
+    margin: 4px;
+    box-shadow: 0px 5px;
+    transition: all 0.25s;
+}
+.soundboard button:hover {
+    transform: translate(0px, -5px);
+    box-shadow: 0px 10px;
+}
+.soundboard button:active {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 5px;
+}
+
+#sound1butt {
+    background-color: blue;
+    color: darkblue;
+}
+#sound2butt {
+    color: darkgreen;
+}
+#sound3butt {
+    color: orange;
+    background-color: yellow;
+}
+#sound4butt {
+    color: darkred;
+    background-color: red;
+}
+.back {
+    margin: 16px auto 0px auto;
+    font-family: sans-serif;
+}
