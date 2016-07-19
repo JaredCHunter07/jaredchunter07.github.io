@@ -1,0 +1,45 @@
+.content {
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px blue;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 8px;
+    background-color: lightgreen;
+    overflow: hidden;
+}
+.content li {
+    display: inline;
+    padding: 8px;
+}
+nav ul li ul {
+    z-index: 1000!important;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: lightblue;
+    padding: inherit;
+    left: 90px;
+    border-radius: 0 10px 10px 10px;
+}
+.dropdown-content li {
+    float: left;
+    clear: left;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.dropdown-content li, .dropdown-content a {
+    color: green;
+    font-weight: bold;
+}
+#contact .dropdown-content {
+    left: 176px;
+}

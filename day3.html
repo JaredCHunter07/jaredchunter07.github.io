@@ -2,9 +2,12 @@
 <html lang="en">
     <head>
         <title>Mormon's Tithing Calculator</title>
-        <link rel="stylesheet" href="day3.css">
+        <link rel="stylesheet" href="day3.css"><script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="nav.js"></script>
     </head>
     <body>
+      <div id="includedContent"></div>
+      <div class="main">
         <h1>Mormon's Tithing Calculator</h1>
         <div class='tithingInput'>
             <p>How much do you have/have you earned?</p>
@@ -15,7 +18,7 @@
                 <p>$<input type="text" id='tithingOutput'></p>
             </div>
         </div>
-        <a href="index.html">Go back</a>
+        </div>
     </body>
     <script>
         document.getElementById('titheButt').onclick = function () {

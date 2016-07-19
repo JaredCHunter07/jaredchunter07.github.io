@@ -3,8 +3,11 @@
     <head>
         <link rel="stylesheet" href="day4.css">
         <title>Soundboard</title>
+        <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="nav.js"></script>
     </head>
     <body>
+      <div id="includedContent"></div>
         <h1>Soundboard</h1>
         <div class="soundboard">
             <audio id="sound1" src="Laugh.mp3" preload="auto"></audio>
@@ -16,7 +19,6 @@
             <button id="sound3butt" onclick="document.getElementById('sound3').play();"><font color="black">Duke Nukem</font></button>
             <button id="sound4butt" onclick="document.getElementById('sound4').play();"><font color="white">Salamander Man</font></button>
         </div>
-        <div class="back"><a href="../index.html">Go back</a></div>
         <p>If you can't play these sounds, your browser isn't supported.</p>
         <p>I do not own these sounds, nor do I own the characters. All sounds and characters go to their owners.</p>
     </body>
