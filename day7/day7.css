@@ -1,0 +1,37 @@
+html {
+    background-color: darkblue;
+}
+.soundboard {
+    margin: auto;
+    background-color: purple;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 25px black;
+}
+th {
+    width: 100px;
+    height: 100px;
+}
+button {
+    width: 95px;
+    height: 95px;
+    box-shadow: 0 4px darkgreen;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    transition: 0.5s ease;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 5px darkgreen;
+}
+button:hover {
+    background: linear-gradient(#e6ffe6, lightgreen);
+    transform: translate(0, -5px);
+    box-shadow: 0 9px darkgreen;
+}
+button:active, .buttonpressed {
+    background: linear-gradient(lightgreen, #e6ffe6);
+    transform: translate(0, 1px);
+    box-shadow: 0 4px darkgreen;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="day7.css">
+        <title>Day 7</title>
+        <script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="nav.js"></script>
+    </head>
+    <body>
+        
+        <div id="includedContent"></div>
+        <audio id="qs" src="samples/bd01.wav" preload="none"></audio>
+        <audio id="ws" src="samples/bd05.wav" preload="none"></audio>
+        <audio id="es" src="samples/bd08.wav" preload="none"></audio>
+        <audio id="rs" src="samples/cp02.wav" preload="none"></audio>
+        <audio id="us" src="samples/cr01.wav" preload="none"></audio>
+        <audio id="is" src="samples/hh02.wav" preload="none"></audio>
+        <audio id="os" src="samples/ht01.wav" preload="none"></audio>
+        <audio id="ps" src="samples/lt01.wav" preload="none"></audio>
+        <audio id="as" src="samples/mt01.wav" preload="none"></audio>
+        <audio id="ss" src="samples/oh01.wav" preload="none"></audio>
+        <audio id="ds" src="samples/rd01.wav" preload="none"></audio>
+        <audio id="fs" src="samples/rs01.wav" preload="none"></audio>
+        <audio id="js" src="samples/sd04.wav" preload="none"></audio>
+        <audio id="ks" src="samples/sd05.wav" preload="none"></audio>
+        <audio id="ls" src="samples/sd08.wav" preload="none"></audio>
+        <audio id="semis" src="samples/sd12.wav" preload="none"></audio>
+        <table class="soundboard">
+            <tr>
+                <th><button id="q" onclick="document.getElementById('qs').play();">Q</button></th>
+                <th><button id="w" onclick="document.getElementById('ws').play();">W</button></th>
+                <th><button id="e" onclick="document.getElementById('es').play();">E</button></th>
+                <th><button id="r" onclick="document.getElementById('rs').play();">R</button></th>
+            </tr>
+            <tr>
+                <th><button id="u" onclick="document.getElementById('us').play();">U</button></th>
+                <th><button id="i" onclick="document.getElementById('is').play();">I</button></th>
+                <th><button id="o" onclick="document.getElementById('os').play();">O</button></th>
+                <th><button id="p" onclick="document.getElementById('ps').play();">P</button></th>
+            </tr>
+            <tr>
+                <th><button id="a" onclick="document.getElementById('as').play();">A</button></th>
+                <th><button id="s" onclick="document.getElementById('ss').play();">S</button></th>
+                <th><button id="d" onclick="document.getElementById('ds').play();">D</button></th>
+                <th><button id="f" onclick="document.getElementById('fs').play();">F</button></th>
+            </tr>
+            <tr>
+                <th><button id="j" onclick="document.getElementById('js').play();">J</button></th>
+                <th><button id="k" onclick="document.getElementById('ks').play();">K</button></th>
+                <th><button id="l" onclick="document.getElementById('ls').play();">L</button></th>
+                <th><button id="semicolon" onclick="document.getElementById('semis').play();">;</button></th>
+            </tr>
+        </table>
+    </body>
+    <script>
+        /* global $ */
+        $(document).keydown(function(event){
+            console.log("it's down");
+            switch (event.keyCode) {
+                case 81: keyPressy($("#q"));
+                         break;
+                case 87: keyPressy($("#w"));
+                break;
+                case 69: keyPressy($("#e"));
+                break;
+                case 82: keyPressy($("#r"));
+                break;
+                case 85: keyPressy($("#u"));
+                break;
+                case 73: keyPressy($("#i"));
+                break;
+                case 79: keyPressy($("#o"));
+                break;
+                case 80: keyPressy($("#p"));
+                break;
+                case 65: keyPressy($("#a"));
+                break;
+                case 83: keyPressy($("#s"));
+                break;
+                case 68: keyPressy($("#d"));
+                break;
+                case 70: keyPressy($("#f"));
+                break;
+                case 74: keyPressy($("#j"));
+                break;
+                case 75: keyPressy($("#k"));
+                break;
+                case 76: keyPressy($("#l"));
+                break;
+                case 186: keyPressy($("#semicolon"));
+            }
+        });
+        $(document).keyup(function(event){
+            console.log("it's up");
+            switch (event.keyCode) {
+                case 81: keyUppy($("#q"));
+                break;
+                case 87: keyUppy($("#w"));
+                break;
+                case 69: keyUppy($("#e"));
+                break;
+                case 82: keyUppy($("#r"));
+                break;
+                case 85: keyUppy($("#u"));
+                break;
+                case 73: keyUppy($("#i"));
+                break;
+                case 79: keyUppy($("#o"));
+                break;
+                case 80: keyUppy($("#p"));
+                break;
+                case 65: keyUppy($("#a"));
+                break;
+                case 83: keyUppy($("#s"));
+                break;
+                case 68: keyUppy($("#d"));
+                break;
+                case 70: keyUppy($("#f"));
+                break;
+                case 74: keyUppy($("#j"));
+                break;
+                case 75: keyUppy($("#k"));
+                break;
+                case 76: keyUppy($("#l"));
+                break;
+                case 186: keyUppy($("#semicolon"));
+            }
+        });
+        function keyPressy(id){
+            id.click();
+            id.addClass("buttonpressed");
+        }
+        function keyUppy(id){
+            id.removeClass("buttonpressed");
+        }//this is the code for button q if a key is pressed. see keyCodes for JavaScript to align keys to buttons. Go to "keycode.info" (w/o quotes) for keycodes. this should be the same code for other buttons, but with different keys.
+    </script>
+</html>
+<!--sounds source: Cassette 909 pack by Bedroom Producers Blog-->
